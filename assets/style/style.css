@@ -1,0 +1,928 @@
+/* ------------------------------------------------------------------------fonts---------------------------------------------------- */
+@font-face {
+    font-family: bld;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: med;
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: reg;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: light;
+    src: url(../fonts/Roboto-Light.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+/* ------------------------------------------------------------------------general---------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,var(--darkRed),var(--darkYellow),var(--darkBlue));
+}
+
+.mainDiv{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    min-width: 300px;
+}
+
+:root{
+    --yellow: #FFE600;
+    --white: #FFFFFF;
+    --green: #59C378;
+    --red: #B9403A;
+    --orange: #FF8A13;
+    --blue: #105F7F;
+    --violet: #A407F7;
+    --black: #1F1E1D; 
+    --gray : #222121;
+    --darkRed: #291719;
+    --darkBlue: #1B3136;
+    --darkYellow: #3F3514;
+    --darkGreen: rgb(2, 75, 16);
+    --darkBlack : #131313;
+    --lightGray: #2E2E2E;
+}
+.wrapper80{
+    width: 80%;
+}
+.wrapper90{
+    width: 90%;
+}
+/* ------------------------------------------------------------------------text color ---------------------------------------------------- */
+.yellow{
+    color: var(--yellow);
+}
+.white{
+    color: var(--white);
+}
+.green{
+    color: var(--green);
+}
+.red{
+    color: var(--red);
+}
+.orange{
+    color: var(--orange);
+}
+.blue{
+    color: var(--blue);
+}
+.violet{
+    color: var(--violet)
+}
+.black{
+    color: var(--black);
+}
+/* ------------------------------------------------------------------------background color ---------------------------------------------------- */
+.bgYellow{
+    background-color: var(--yellow);
+}
+.bgWhite{
+    background-color: var(--white);
+}
+.bgGreen{
+    background-color: var(--green);
+}
+.bgRed{
+    background-color: var(--red);
+}
+.bgOrange{
+    background-color: var(--orange);
+}
+.bgBlue{
+    color: var(--blue);
+}
+.bgViolet{
+    background-color: var(--violet)
+}
+.bgBlack{
+    background-color: var(--black);
+}
+.bgGray{
+    background-color: var(--gray);
+}
+.bgDarkRed{
+    background-color: var(--darkRed);
+}
+.bgDarkBlue{
+    background-color: var(--darkBlue);
+}
+.bgDarkBlack{
+    background-color: var(--darkBlack);
+}
+/* ------------------------------------------------------------------------text sizes ---------------------------------------------------- */
+.xlgTitle{
+    font-size: 140px;
+    font-family: bld;
+}
+.bigTitle{
+    font-size: 90px;
+    font-family: bld;
+    line-height: 118%;
+}
+.title{
+    font-size: 60px;
+    font-family: bld;
+    line-height: 118%;
+}
+.sectionTitle{
+    font-size: 48px;
+    line-height: 55px;
+    font-family: bld;
+}
+.miniTitle{
+    font-size: 32px;
+    font-family: med;
+    line-height: 39px;
+    margin-bottom: 20px;
+}
+.boxTitle{
+    font-size: 24px;
+    font-family: reg;
+}
+.text{
+    font-size: 19px;
+    font-family: reg;
+    line-height: 33px;
+}
+.label{
+    font-size: 16px;
+    font-family: bld;
+}
+.lightText{
+    font-size: 16px;
+    font-family: light;
+}
+@media(max-width:1199px)
+{
+    .bigTitle{
+        font-size: 60px;
+    }
+    .title{
+        font-size: 45px;
+    }
+    .sectionTitle{
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .miniTitle{
+        font-size: 28px;
+    }
+    .boxTitle{
+        font-size: 22px;
+        font-family: reg;
+    }
+    .text{
+        font-size: 19px;
+    }
+
+}
+@media(max-width:991px)
+{
+    .bigTitle{
+        font-size: 45px;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .sectionTitle{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .miniTitle{
+        font-size: 22px;
+    }
+    .boxTitle{
+        font-size: 20px;
+        font-family: reg;
+    }
+    .text{
+        font-size: 19px;
+    }
+
+}
+@media(max-width:530px)
+{
+    .xlgTitle{
+        font-size: 90px;
+    }
+    .bigTitle{
+        font-size: 35px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .sectionTitle{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .miniTitle{
+        font-size: 20px;
+    }
+    .boxTitle{
+        font-size: 18px;
+        font-family: reg;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .lightText{
+        font-size: 10px;
+        font-family: light;
+    }
+
+}
+/* ------------------------------------------------------------------------text decoration ---------------------------------------------------- */
+.specialText{
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+.specialText:after{
+    content: "";
+    position: absolute;
+    background-color: var(--green);
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    left: 0;
+    top:150%;
+}
+.specialText:hover::after{
+    opacity: 1;
+}
+/* ------------------------------------------------------------------------text align ---------------------------------------------------- */
+.textCenter{
+    text-align: center;
+}
+.textRight{
+    text-align: right;
+}
+/* ------------------------------------------------------------------------display ---------------------------------------------------- */
+.inlineBlock{
+    display: inline-block;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexEven{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexChildEqual{
+    flex: 1;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 40px;
+    column-gap: 50px;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    row-gap: 40px;
+    column-gap: 50px;
+}
+
+
+/* ------------------------------------------------------------------------positions ---------------------------------------------------- */
+.fixed{
+    position: fixed;
+    z-index: 9998;
+}
+/* ------------------------------------------------------------------------padding ---------------------------------------------------- */
+
+.pd3518{
+    padding: 35px 18px;
+}
+.pd2018{
+    padding: 20px 18px;
+}
+.pdT20{
+    padding-top: 20px;
+}
+.pdT40{
+    padding-top: 40px;
+}
+
+.mgT30{
+    margin-top: 30px;
+}
+.mgT50{
+    margin-top: 50px;
+}
+.mgTN10{
+    margin-top: -10px;
+}
+@media(min-width:991px)
+{
+    .pdTLg130{
+        padding-top: 130px;
+    }
+    .mgTLg100{
+        margin-top: 100px;
+    }
+}
+
+/* ------------------------------------------------------------------------width and height ---------------------------------------------- */
+.w100{
+    width: 100%;
+}
+.w90{
+    width: 90%;
+}
+.w85{
+    width: 85%;
+}
+.w80{
+    width: 80%;
+}
+.w70{
+    width: 70%;
+}
+.w60{
+    width: 60%;
+}
+.w50{
+    width: 50%;
+}
+.w45{
+    width: 45%;
+}
+.w40{
+    width: 40%;
+}
+/* ------------------------------------------------------------------------auto ---------------------------------------------- */
+.auto{
+    margin: auto;
+}
+/* ------------------------------------------------------------------------buttons and inputs ------------------------------------------ */
+.btnPrimary{
+    outline: none;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 40px;
+    padding: 10px 65px 10px 35px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    transition: background-color 1s;
+}
+.btnPrimary::after{
+    position: absolute;
+    content: "";
+    border: solid white;
+    border-width: 3px 3px 0px 0;
+    display: inline-block;
+    padding: 5px;
+    top: 50%;
+    left:100%;
+    transform: translate(-45px,-50%) rotate(45deg);
+
+
+
+}
+.btnPrimary:hover{
+    background-color: var(--darkGreen);
+}
+.formStyle > div{
+    /* font-size:0;
+    line-height:0; */
+    padding-top: 40px;
+}
+.formStyle input,.formStyle textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    width: 100%;
+    background-color: transparent;
+    color: var(--white);
+    padding: 7px 0px;
+    resize: none;
+}
+.formStyle input:focus,.formStyle textarea:focus{
+    border-color: var(--yellow);
+}
+/* -----------------------------------------------------------------------------Boxes and icons------------------------------------ */
+.box{
+    /* border: 1px solid var(--white); */
+    box-shadow: 5px 5px 5px 5px var(--green);
+    border-radius: 10px;
+    padding: 40px;  
+    width: calc(100% - 80px);
+    background-color: var(--gray);
+    color: var(--white);
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--lightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* -----------------------------------------------------------------------------sections------------------------------------ */
+.section{
+    padding: 100px 0px;
+}
+
+/* -----------------------------------------------------------------------------loadingScreen------------------------------------ */
+#loadingScreen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    color: var(--white);
+    z-index: 9999;
+}
+.rectangleRadius{
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: var(--darkGreen);
+    position: relative;
+    animation: moveCar 5s infinite;
+    top:50%;
+    transform: translateY(-50%);
+}
+.light{
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--red);
+    position: absolute;
+    top: 38%;
+    left: calc(100% - 2px);
+    transform: translate(-100%,-50%) rotateZ(-20deg);
+}
+.upperRectangle{
+    width: 66.67%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: -100%;
+    left:15%;
+}
+.upperRectangle::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    top: 0%;
+    left:100%;
+    transform: translate(-70%,-65%) rotate(60deg);
+}
+.upperRectangle::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    top: 0%;
+    left:100%;
+    transform: translate(-41%,-50%) rotate(90deg);
+}
+.wheels{
+    position: absolute;
+    width: 27%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: black;
+    top: 100%;
+   
+}
+.wheels::after{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--black);
+    z-index: 9999;
+   
+}
+.wheels.left{
+    left: 0;
+    transform: translate(50%,-50%);
+
+}
+.wheels.right{
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+.window{
+    width:30px;
+    height: 30px;
+    background-color: var(--black);
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: translate(0,-100%);
+
+}
+.window.right{
+   
+    left: 50%;
+}
+.street{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--blue);
+    border: none;
+    top: calc(50% + 100px);
+    
+}
+
+#loadingScreen p{
+    position: relative;
+    z-index: 9999;
+}
+@keyframes moveCar {
+0%{
+    left: 0%;
+}
+50%{
+    left:calc(100% - 300px);
+}
+    100%{
+        left: 0%;
+    }
+}
+@media(max-width:500px)
+{
+    .rectangleRadius{
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    .window{
+        width:15px;
+        height: 15px;
+    }
+    .light{
+        width: 10px;
+        height: 20px;
+        border-radius: 10px;
+    }
+    @keyframes moveCar {
+        0%{
+            left: 0%;
+        }
+        50%{
+            left:calc(100% - 150px);
+        }
+            100%{
+                left: 0%;
+            }
+        }
+}
+/* -----------------------------------------------------------------------------home section------------------------------------ */
+
+#Home img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+@media(max-width:990px)
+{
+    #Home{
+        padding: 35px 0px;
+    }
+    #Home .flexCenter{
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    #Home p{
+        margin: auto;
+    }
+    #Home img{
+        width: 400px;
+        height: 400px;
+    }
+    #homeRightSide > div{
+        margin-top: 70px;
+    
+    }
+    #homeLeftSide > div{
+        margin-top: 70px;
+    }
+    #homeLeftSide > div h1{
+        margin-top: 10px;
+    }
+}
+@media(max-width:550px)
+{
+    #Home img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width:350px)
+{
+    #Home img{
+        width: 250px;
+        height: 250px;
+    }
+}
+/* -----------------------------------------------------------------------------header section------------------------------------ */
+.hamburger{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 1px solid var(--green);
+    cursor: pointer;
+}
+.hamburger::after{
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    content: "";
+    top:50%;
+    left:50%;
+    border-bottom: 1px solid var(--green);
+    border-top: 1px solid var(--green);
+    transform: translate(-50%,-50%);
+}
+
+@media(max-width:990px)
+{
+    .hamburger{
+        display: block;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    header ul{
+        text-align: left !important;
+        position: absolute;
+        background-color: var(--black);
+        width: 250px;
+        top:100%;
+        left: -250px;
+        transition: all 0.3s;
+    }
+    header ul li{
+        display: block !important;
+        padding: 10px 18px !important;
+    }
+}
+/* -----------------------------------------------------------------------------contact section------------------------------------ */
+#Contact .iconContainer
+{
+    width: 90px;
+}
+#contactTitle p{
+    width:fit-content;
+    max-width:700px;
+}
+@media(max-width:990px)
+{
+    #contactBoxes.flexEven{
+        display: block;
+    }
+    #contactRightSide{
+        width: 50%;
+        min-width: 290px;
+    }
+}
+@media(max-width:450px)
+{
+    #contactRightSide{
+       margin: auto;
+    }
+    
+
+}
+
+/* -----------------------------------------------------------------------------skills-------------------------------------------------- */
+#Skills{
+    background: linear-gradient(to right bottom,var(--black),var(--lightGray),var(--violet));
+}
+#Skills p{
+    max-width:700px;
+}
+#experienceBox{
+    background-color: var(--black);
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 50px 180px;
+    position: relative;
+    width: 200px;
+    margin: auto;
+}
+#clientBox{
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    left:100%;
+    top:100%;
+    transform: translate(-50%,-120%);
+    background-color: var(--lightGray);
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px var(--green);
+}
+
+.skillBox{
+    width:100%;
+    padding: 25px 10px;
+    text-align: center;
+    background-color: var(--black);
+    border-radius: 10px;
+    position: relative;
+}
+.skillBox::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.skillBox.blue::after{
+    box-shadow: 0px -3px 0px 1px var(--blue);
+}
+.skillBox.orange::after{
+    box-shadow: 0px -3px 0px 1px var(--orange);
+}
+.skillBox.red::after{
+    box-shadow: 0px -3px 0px 1px var(--red);
+}
+.skillBox.yellow::after{
+    box-shadow: 0px -3px 0px 1px var(--yellow);
+}
+.skillBox.green::after{
+    box-shadow: 0px -3px 0px 1px var(--green);
+}
+.skillBox .skillimg{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding: 10px 0px;
+}
+.skillBox img{
+    width: 50px;
+    height: 50px;
+}
+@media(max-width:1300px)
+{
+    #clientBox{
+        left:0%;
+        top:100%;
+        transform: translate(0%,-120%);
+    }
+
+}
+@media(max-width:990px)
+{
+    #skillsSectionRow{
+        flex-direction: column !important;
+    }
+    #Skills .grid3{
+        column-gap: 0;
+        width: 100% !important;
+    }
+    .skillBox{
+        width:80%;
+        margin: auto;
+    }
+}
+@media(max-width:750px)
+{
+    #skillsTitle{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media(max-width:450px)
+{
+    #Skills .grid3{
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+/* -----------------------------------------------------------------------------projects-------------------------------------------------- */
+
+#Portfolio{
+    background: linear-gradient(to left bottom,var(--darkBlack),var(--gray),var(--yellow));
+}
+#Portfolio p{
+    max-width: 700px;
+}
+.project{
+   box-shadow: 0px 0px 5px 5px var(--green);
+   transition: all 1s;
+}
+.project a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.project img, .project h1, .project p{
+    transition: all .3s;
+}
+
+.project:hover h1, .project:hover p{
+ color: var(--blue) !important;
+}
+@media(max-width:850px)
+{
+    #Portfolio .grid2{
+        grid-template-columns: 100%;
+    }
+
+}
+@media(max-width:550px)
+{
+    #Portfolio .projectText{
+        padding:10px;
+    }
+
+}
+/* -----------------------------------------------------------------------------Animations----------------------------------------------- */
+.fadeIn{
+    animation: fade 1s forwards;
+}
+.fadee{
+    animation: fade 1s infinite;  
+}
+.invisible{
+    opacity: 0 !important;
+}
+
+.heightAnim{
+    position: relative;
+    animation: changeHeight 1s;
+}
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes changeHeight{
+    from{
+       left: -100%;
+    }
+    to{
+        left:0;
+    }
+}
