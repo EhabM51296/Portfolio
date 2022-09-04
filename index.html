@@ -1,24 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/style/style.css" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/style/style.css" rel="stylesheet" />
     <title>Ehab Maatouk</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="mainDiv">
-        <?php 
-            require "loading.php";
-            require "header.php";
-            require "home.php";
-            require "skills.php";
-            require "projects.php";
-            require "contact.php";
-        ?>
-        
+      <div id="loadingScreen" class="">
+        <div class="rectangleRadius">
+          <div class="upperRectangle"></div>
+          <div class="wheels left"></div>
+          <div class="wheels right"></div>
+          <div class="window"></div>
+          <div class="window right"></div>
+          <div class="light"></div>
+        </div>
+        <hr class="street" />
+        <p class="title textCenter">Loading...</p>
+      </div>
+      <header class="fixed w100 bgDarkBlack">
+        <div class="wrapper90 auto">
+          <div class="hamburger"></div>
+        </div>
+        <nav id="navigator">
+          <ul class="textCenter" id="navigatorLinks">
+            <li class="inlineBlock pd2018">
+              <a class="text specialText white" id="scroll_Home">Home</a>
+            </li>
+            <li class="inlineBlock pd2018">
+              <a class="text specialText white" id="scroll_Skills">Skills</a>
+            </li>
+            <li class="inlineBlock pd2018">
+              <a class="text specialText white" id="scroll_Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="inlineBlock pd2018">
+              <a class="text specialText white" id="scroll_Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="Home" class="pdTLg130 mgTLg100 pd3500">
+        <div class="flexCenter w85 auto">
+          <div id="homeLeftSide">
+            <div>
+              <h1 class="title yellow">Hello,</h1>
+              <h1 class="bigTitle white">I Am Ehab.</h1>
+              <h1 class="miniTitle green fadee">Full Stack Developer</h1>
+              <p class="text white w80">
+                a passionate programmer bringing your ideas come true. I am
+                experienced in developing web and mobile applications including
+                full development the frontend and the backend design.
+              </p>
+            </div>
+            <div class="pdT20">
+              <button class="btnPrimary text" id="hireMe">Hire Me</button>
+            </div>
+          </div>
+          <div id="homeRightSide">
+            <div>
+              <img src="./assets/images/founder.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Skills" class="section">
+        <div id="skillsSectionRow" class="flexEven">
+          <div id="skillsLeftSide" class="flexChildEqual">
+            <div id="experienceBox">
+              <h1 class="yellow xlgTitle">02</h1>
+              <p class="text white">Years Of Experience</p>
+              <div id="clientBox" class="invisible">
+                <div class="green sectionTitle">100%</div>
+                <div>
+                  <p class="text white">Clients</p>
+                  <p class="text white">Satisfaction</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="skillsRightSide" class="flexChildEqual">
+            <div id="skillsTitle">
+              <h1 class="white sectionTitle">My Skills</h1>
+              <p class="white text">Have a look on my magic boxes</p>
+            </div>
+            <div class="grid3 mgT30 w70">
+              <div class="skillBox invisible orange">
+                <div class="skillimg">
+                  <img src="assets/images/HTML.png" />
+                </div>
+                <p class="label orange mgTN10">HTML</p>
+              </div>
+              <div class="skillBox invisible blue">
+                <div class="skillimg">
+                  <img src="assets/images/CSS.png" />
+                </div>
+                <p class="label blue mgTN10">CSS</p>
+              </div>
+              <div class="skillBox invisible yellow">
+                <div class="skillimg">
+                  <img src="assets/images/Javascript.png" />
+                </div>
+                <p class="label yellow mgTN10">Javascript</p>
+              </div>
+              <div class="skillBox invisible yellow">
+                <div class="skillimg">
+                  <img src="assets/images/Jquery.png" />
+                </div>
+                <p class="label yellow mgTN10">Jquery</p>
+              </div>
+              <div class="skillBox invisible blue">
+                <div class="skillimg">
+                  <img src="assets/images/React.png" />
+                </div>
+                <p class="label blue mgTN10">React</p>
+              </div>
+              <div class="skillBox invisible red">
+                <div class="skillimg">
+                  <img src="assets/images/PHP.png" />
+                </div>
+                <p class="label red mgTN10">PHP</p>
+              </div>
+              <div class="skillBox invisible red">
+                <div class="skillimg">
+                  <img src="assets/images/Laravel.png" />
+                </div>
+                <p class="label red mgTN10">Laravel</p>
+              </div>
+              <div class="skillBox invisible blue">
+                <div class="skillimg">
+                  <img src="assets/images/Flutter.png" />
+                </div>
+                <p class="label blue mgTN10">Flutter</p>
+              </div>
+              <div class="skillBox invisible green">
+                <div class="skillimg">
+                  <img src="assets/images/MySQL.png" />
+                </div>
+                <p class="label green mgTN10">MySQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Portfolio" class="section">
+        <div class="wrapper80 auto">
+          <div id="projectsTitle">
+            <h1 class="white sectionTitle">Recent Work</h1>
+            <p class="white text">Enjoy viewing my projects library</p>
+          </div>
+          <div class="grid2 mgT50">
+            <div class="project invisible">
+              <a href="https://www.zeekfinance.com/" target="”_blank”">
+                <div class="projectImage">
+                  <img src="./assets/images/zeekfinance.png" width="100%" />
+                </div>
+                <div class="projectText pd3518">
+                  <h1 class="white miniTitle">Zeek Finance</h1>
+                  <p class="white lightText mgTN10">Website</p>
+                </div>
+              </a>
+            </div>
+            <div class="project invisible">
+              <a href="https://www.ensabill.com/" target="”_blank”">
+                <div class="projectImage">
+                  <img src="./assets/images/ensabill.png" width="100%" />
+                </div>
+                <div class="projectText pd3518">
+                  <h1 class="white miniTitle">Ensabill</h1>
+                  <p class="white lightText mgTN10">Website</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Contact" class="section bgDarkBlack">
+        <div class="w90 auto">
+          <div id="contactTitle" class="textCenter white">
+            <h1 class="sectionTitle">Let's Talk</h1>
+            <p class="text auto pdT20">
+              Get your space suit ready and tell me your ideas to develop your
+              dream application.
+            </p>
+          </div>
+          <div id="contactBoxes" class="flexEven pdT40">
+            <div id="contactLeftSide">
+              <div class="box">
+                <h1 class="textCenter boxTitle">Get In Touch</h1>
+                <form class="formStyle">
+                  <div class="flexBetween row">
+                    <div class="w45">
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="text"
+                        required
+                      />
+                    </div>
+                    <div class="w45">
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="text"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Phone"
+                        class="text"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <textarea
+                        placeholder="Message"
+                        class="text"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="row textCenter">
+                    <div>
+                      <button class="btnPrimary text">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="contactRightSide">
+              <div class="box mgT30">
+                <h1 class="boxTitle">Saida, Lebanon</h1>
+                <div class="boxDetails flexEven pdT20">
+                  <div class="iconContainer">
+                    <div class="circle">
+                      <img src="./assets/images/address.png" />
+                    </div>
+                  </div>
+                  <div class="flexChildEqual">
+                    <span class="lightText">Address Location</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box mgT30">
+                <h1 class="boxTitle">Ehabmaatouk@outlook.com</h1>
+                <div class="boxDetails flexEven pdT20">
+                  <div class="iconContainer">
+                    <div class="circle">
+                      <img src="./assets/images/mail.png" />
+                    </div>
+                  </div>
+                  <div class="flexChildEqual">
+                    <span class="lightText">Email Address</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box mgT30">
+                <h1 class="boxTitle">+96176090294</h1>
+                <div class="boxDetails flexEven pdT20">
+                  <div class="iconContainer">
+                    <div class="circle">
+                      <img src="./assets/images/phone.png" />
+                    </div>
+                  </div>
+                  <div class="flexChildEqual">
+                    <span class="lightText">Mobile Number</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="assets/js/index.js"></script>
-</body>
+  </body>
 </html>
