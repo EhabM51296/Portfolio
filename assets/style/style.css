@@ -832,7 +832,7 @@ body{
         flex-direction: column !important;
     }
     #Skills .grid3{
-        column-gap: 0;
+        column-gap: 10px;
         width: 100% !important;
     }
     .skillBox{
